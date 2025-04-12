@@ -9,7 +9,8 @@ const app = express();
 
 app.use(express.json());
 app.use(urlencoded({extended:true}));
-app.use();
+app.use(cookieParser());
+ 
 app.listen(PORT,()=>{
     console.log(`Server is running at PORT ${PORT}`)
 });
